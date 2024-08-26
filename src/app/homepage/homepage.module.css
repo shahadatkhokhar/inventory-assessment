@@ -1,0 +1,256 @@
+.container {
+  @apply flex min-h-screen flex-col bg-gray-800;
+}
+
+.row {
+  @apply flex flex-row;
+}
+
+.table-container {
+  @apply p-4;
+}
+
+.table {
+  @apply w-full border-collapse bg-gray-900 text-white rounded-lg overflow-hidden;
+}
+
+.table-header {
+  @apply bg-gray-800 text-green-300 p-3 text-left;
+}
+
+.table-row {
+  @apply bg-gray-900 border-b border-gray-700;
+}
+
+.table-actions {
+  @apply flex gap-2;
+}
+
+.action-button {
+  @apply bg-transparent border-none text-green-300 cursor-pointer text-lg;
+}
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.modal {
+  @apply bg-gray-800 text-white p-6 rounded-lg w-96;
+}
+
+.modal-header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.close-button {
+  @apply text-green-400 text-lg;
+}
+
+.modal-body {
+  @apply flex flex-col gap-4;
+}
+
+.form-group {
+  @apply flex flex-col;
+}
+
+.input {
+  @apply bg-gray-700 p-2 rounded-lg mt-2 text-white border-none;
+}
+
+.modal-footer {
+  @apply flex justify-end mt-4 gap-4;
+}
+
+.cancel-button {
+  @apply text-green-400;
+}
+
+.save-button {
+  @apply bg-green-600 text-white p-2 rounded-lg;
+}
+/* Navbar styles */
+.navbar {
+  @apply flex items-end py-2 px-4 text-white w-full justify-end;
+}
+
+.left {
+  @apply flex-1;
+}
+
+.right {
+  @apply flex items-center justify-center;
+}
+
+.text {
+  @apply mx-2 text-sm;
+}
+
+/* Switch Toggle styles */
+.switch {
+  @apply relative inline-block w-12 h-6 mx-2;
+}
+
+.switch input {
+  @apply hidden;
+}
+
+.slider {
+  @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-400 rounded-full transition duration-300;
+}
+
+.slider:before {
+  content: "";
+  @apply absolute left-1 bottom-1 bg-white w-4 h-4 rounded-full transition-transform duration-300;
+}
+
+input:checked + .slider {
+  @apply bg-green-500;
+}
+
+input:checked + .slider:before {
+  @apply translate-x-6;
+}
+
+/* Icon button styles */
+.iconbutton {
+  @apply text-white text-xl ml-4;
+}
+
+.cardContainer {
+  @apply flex flex-row items-start justify-start w-[23%] h-24 bg-green-950 text-white rounded-lg p-4 shadow-lg m-2;
+}
+
+.cardIcon {
+  @apply text-3xl text-start mr-4;
+}
+.iconStyle {
+  @apply text-[30px];
+}
+
+.cardText {
+  @apply text-start;
+}
+
+.cardTitle {
+  @apply text-sm font-normal;
+}
+
+.cardNumber {
+  @apply text-3xl font-semibold;
+}
+
+.inventorystats {
+  @apply p-8 text-white;
+}
+
+.statstitle {
+  @apply text-3xl font-normal mb-6;
+}
+
+.statscards {
+  @apply flex flex-wrap justify-between;
+}
+
+.dataTableContainer {
+  @apply h-full w-full bg-gray-800 rounded-lg overflow-hidden text-white px-3;
+}
+
+.dataTable .MuiDataGrid-root {
+  @apply bg-gray-900;
+}
+
+.dataTable .MuiDataGrid-columnHeaders {
+  @apply bg-gray-800 border-opacity-0;
+}
+
+.headerCell {
+  @apply text-yellow-700 font-bold bg-gray-950;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  @apply text-white border-b border-red-400;
+}
+
+.actions {
+  @apply flex;
+}
+
+.icon {
+  @apply w-[20px] h-[20px];
+}
+
+.actionButton {
+  @apply text-green-400;
+}
+
+.eyeButton {
+  @apply text-purple-300;
+}
+
+.deleteButton {
+  @apply text-red-500;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+}
+
+/* Modal Container */
+.modal {
+  @apply bg-gray-800 text-white p-6 rounded-lg w-[40%];
+}
+
+/* Modal Header */
+.modalHeader {
+  @apply flex justify-between items-center mb-4;
+}
+
+.modalTitle {
+  @apply text-3xl;
+}
+
+.closeButton {
+  @apply text-green-400 text-lg cursor-pointer;
+}
+
+/* Product Name */
+.productName {
+  @apply font-normal mb-4;
+}
+
+/* Modal Body */
+.modalBody {
+  @apply flex flex-col gap-4;
+}
+
+/* Form Group */
+.formGroup {
+  @apply flex flex-col w-full;
+}
+
+.label {
+  @apply text-sm font-semibold mb-1;
+}
+
+.input {
+  @apply w-[90%] bg-gray-700 p-2 rounded-lg text-white border-none;
+}
+
+/* Modal Footer */
+.modalFooter {
+  @apply flex justify-end mt-4 gap-4;
+}
+
+.modalRow {
+  @apply flex flex-row justify-between;
+}
+
+.cancelButton {
+  @apply text-green-400 cursor-pointer;
+}
+
+.saveButton {
+  @apply bg-green-600 text-white p-2 rounded-lg cursor-pointer;
+}
