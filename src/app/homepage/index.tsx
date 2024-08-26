@@ -18,7 +18,12 @@ export type Item = {
 export default function HomePage() {
   const [isUser, setIsUser] = useState(false);
   const [data, setData] = useState<Item[]>([]);
-  const [cardData, setCardData] = useState({});
+  const [cardData, setCardData] = useState({
+    totalProducts: 0,
+    totalStoreValue: 0,
+    outOfStocks: 0,
+    uniqueCategories: 0,
+  });
   useEffect(() => {
     axios
       .get("https://dev-0tf0hinghgjl39z.api.raw-labs.com/inventory")
@@ -46,6 +51,7 @@ export default function HomePage() {
         ).length;
 
         const uniqueCategories = [
+          //@ts-ignore
           ...new Set(newData.map((item: { category: any }) => item.category)),
         ].length;
         const stats = {
@@ -74,6 +80,7 @@ export default function HomePage() {
     ).length;
 
     const uniqueCategories = [
+      //@ts-ignore
       ...new Set(newData.map((item: { category: any }) => item.category)),
     ].length;
     const stats = {

@@ -51,7 +51,7 @@ const InventoryStats = ({ cardData }: StatsProps) => {
             key={index}
             icon={stat.icon}
             title={stat.title}
-            value={stat.value}
+            value={stat.value.toString()}
           />
         ))}
       </div>

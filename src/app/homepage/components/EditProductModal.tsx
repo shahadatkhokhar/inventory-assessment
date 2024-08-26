@@ -81,6 +81,7 @@ const EditProductModal = ({
               <input
                 type="number"
                 value={quantity}
+                //@ts-ignore
                 onChange={(e) => setQuantity(e.target.value)}
                 className={styles.input}
               />
